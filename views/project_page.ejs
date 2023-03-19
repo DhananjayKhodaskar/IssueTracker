@@ -1,24 +1,13 @@
-<div class="w-50 border border-secondary border-1 p-3 m-auto ">
-  <h3 class="display-5 p-3 mb-2 bg-secondary text-white">
-    Project : <%= project.name %>
+<div class="w-50  p-3 m-auto ">
+  <h3 class="display-5 p-3 mb-2 bg-secondary text-white text-center rounded text-background">
+     <%= project.name %>
   </h3>
-  <h4 class="display-7 p-3 mb-2 bg-light text-dark">
+  <h4 class="display-7 p-3 mb-2 bg-light text-dark rounded">
     Author : <%= project.author %>
   </h4>
-  <h5 class="display-7 p-3 mb-2 bg-light text-dark">
+  <h5 class="display-7 p-3 mb-2 bg-light text-dark rounded">
     Description : <%= project.description %>
   </h5>
 </div>
 <%-include('./partials/_issues'); %>
-<% for(let issue of project.issues){ %>
-  <div id="all-issues" class="card w-100" style="width: 18rem">
-    <div class="card-body">
-      <h4 class="card-title">Title : <%= issue.title %></h4>
-      <h5 class="card-title">Author : <%= issue.author %></h5>
-      <h6 class="card-subtitle mb-2 text-muted">
-        Description : <%= issue.description %>
-      </h6>
-      Labels : <%= issue.labels %>
-    </div>
-  </div>
-  <% } %>
+
