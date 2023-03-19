@@ -1,11 +1,15 @@
 <div class="mb-5 p-5">
+  <h1 class="text-center mb-5 " style="font-weight: 400; font-family: sans-serif;">Projects</h1>
+  <% if(projects.length == 0){ %>
+    <h5>No Project yet..</h5>
+    <% } %>
   <% for( let project of projects ) { %>
   <div class="card mb-2 w-50 m-auto ">
     <div class="card-header">
       <strong> Name of the project : </strong><%= project.name %>
     </div>
     <div class="card-body">
-      <h6 class="card-subtitle mb-2 text-muted">
+      <h6 class="card-subtitle mb-2 ">
         <strong> Author : </strong> <%= project.author %>
       </h6>
       <p class="card-text">
