@@ -46,25 +46,36 @@ https://dhananjayk-issue-tracker.onrender.com/
 
 ● Home Page
  
-  * Search any meal from the API and it displays the search results on the frontend (as
-    we type, the search results updates).
-  * Each search result of the meal  have "Add To Favourite" button, clicking on which
-    the meal gets added to "Favourite” (a list).
-  * On clicking "Details" of any meal from Search Result, opens a new page with more
-    information about that meal(meal page).
+  * Shows a list of projects
+  * Given a button to create a new Project (On creating a new project it
+    appear in the list)
     
-● Meal Detail Page
-  * Shows Information about the meal like its name, photo, instructions.
+● Create Project Page
+  * Accepts the following fields to create a project
+    * Name
+    * Description
+    * Author
   
-● My favourite meals Page
-  * Displays a list of all the favourite meals.
-  * This List is Persistent (shows the same number of meals before and after
-    closing the browser/refreshing the browser).
-  * "Remove Favourite" button: Each meal have "Remove Favourite"
-    button, clicking on which removes that meal from the list.
-   
+● Project Detail Page
+  * When the user clicks on a project (in home page) it redirects the user to this
+    page which shows bugs related to that project
+  * User is able to perform following actions on this page
+    * Filter by multiple labels i.e. able to filter by 2 or more
+      labels at the same time
+    * Filter by author
+    * Search by title and description
+  * A button to create an issue
+
+● Create issue page
+  * User able to create an issue for a project
+  * Accept the following fields
+    * Title
+    * Description
+    * Labels (multiple labels can be added to a project)
+    * Author
+
 ## 🚦Version
-1.0 - Added Local Storage to the Base Project
+1.0 - Running Succesfully with above feature withe scope to add more in near future
 ## 👦Contact
 🔗 Author - @Dhananjay Khodaskar 
 
