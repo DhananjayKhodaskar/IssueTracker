@@ -21,3 +21,13 @@ body {
   background-image: url('https://static.vecteezy.com/system/resources/previews/006/852/804/original/abstract-blue-background-simple-design-for-your-website-free-vector.jpg');
 }
 
+.pattern {
+  --s: 150px; /* control the size */
+  
+  --_g: #0000 90deg,#046D8B 0;
+  background:
+    conic-gradient(from 116.56deg at calc(100%/3) 0   ,var(--_g)),
+    conic-gradient(from -63.44deg at calc(200%/3) 100%,var(--_g))
+    #2FB8AC;
+  background-size: var(--s) var(--s);
+}

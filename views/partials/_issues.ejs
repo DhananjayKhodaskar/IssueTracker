@@ -16,7 +16,7 @@
       data-bs-toggle="modal"
       data-bs-target="#allIssue"
     >
-      Show All Issues
+      All Issues
     </button>
 
     <!-- Modal -->
@@ -29,8 +29,8 @@
     >
       <div class="modal-dialog modal-dialog-scrollable">
         <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="allIssueLabel">All Issues</h5>
+          <div class="modal-header text-center" style="background-color:#2e2d78;">
+            <h5 class="modal-title text-center text-white" id="allIssueLabel">All Issues</h5>
             <button
               type="button"
               class="btn-close"
@@ -38,11 +38,11 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">
+          <div class="modal-body pattern" >
             <% for(let issue of project.issues){ %>
-            <div id="all-issues" class="card w-100" style="width: 18rem">
+            <div id="all-issues" class="card w-100 " style="width: 18rem ">
               <div class="card-body">
-                <h4 class="card-title">Title : <%= issue.title %></h4>
+                <h4 class="card-title ">Title : <%= issue.title %></h4>
                 <h5 class="card-title">Author : <%= issue.author %></h5>
                 <h6 class="card-subtitle mb-2 text-muted">
                   Description : <%= issue.description %>
@@ -52,11 +52,12 @@
             </div>
             <% } %>
           </div>
-          <div class="modal-footer">
+          <div class="modal-footer" style="background-color:#2e2d78;">
             <button
-              type="button"
-              class="btn btn-secondary"
+              type="button "
+              class="btn btn-danger "
               data-bs-dismiss="modal"
+
             >
               Close
             </button>
@@ -91,7 +92,7 @@
     >
       <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-header">
+          <div class="modal-header" style="background-color:#2e2d78; color: white;">
             <h5 class="modal-title" id="staticBackdropLabel">Filter Issues</h5>
             <button
               type="button"
@@ -127,7 +128,7 @@
                 <% } %>
               </div>
             </div>
-            <div class="row mb-3 m-auto">
+            <div class="row mb-3 m-auto ">
               <label for="authorlabel" class="col-sm-4 col-form-label"
                 >Author</label
               >
@@ -140,7 +141,7 @@
                   value=""
                   id="null"
                 />
-                <label class="form-check-label" for="null">None</label><br />
+                <label class="form-check-label " for="null">None</label><br />
                 <% for( let issue of project.issues ) { %>
                 <input
                   class="form-check-input"
@@ -156,11 +157,12 @@
               </div>
             </div>
 
-            <div class="modal-footer">
+            <div class="modal-footer" >
               <button
                 type="button"
-                class="btn btn-secondary"
+                class="btn btn-danger"
                 data-bs-dismiss="modal"
+
               >
                 Close
               </button>
@@ -203,7 +205,7 @@
     >
       <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-header">
+          <div class="modal-header" style="background-color:#2e2d78; color: white;">
             <h5 class="modal-title" id="searchmodalLabel">Search Issues</h5>
             <button
               type="button"
@@ -247,10 +249,10 @@
               </div>
             </div>
 
-            <div class="modal-footer">
+            <div class="modal-footer style="background-color:#2e2d78; color: white;">
               <button
                 type="button"
-                class="btn btn-secondary"
+                class="btn btn-danger "
                 data-bs-dismiss="modal"
               >
                 Close
