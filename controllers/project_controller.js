@@ -2,7 +2,7 @@ const Project = require('../models/project');
 const Issue = require('../models/issue');
 const { findById } = require('../models/project');
 
-// create a project for the user
+//this controller is used for creating a project
 module.exports.create = async function (req, res) {
   try {
     Project.create({
@@ -16,8 +16,7 @@ module.exports.create = async function (req, res) {
     return res.redirect('back');
   }
 };
-
-// find project and display it in the project page
+// it is controller used to find and display project in project page
 module.exports.project = async function (req, res) {
   try {
     let project = await Project.findById(req.params.id).populate({
@@ -36,7 +35,7 @@ module.exports.project = async function (req, res) {
   }
 };
 
-// create issue
+// this controller is used to create issue and save/push it into my MongoDB Database
 module.exports.createIssue = async function (req, res) {
   try {
     let project = await Project.findById(req.params.id);

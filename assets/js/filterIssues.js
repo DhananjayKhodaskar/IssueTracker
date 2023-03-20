@@ -1,19 +1,16 @@
-// get the form
+// fetching the form
 let filterIssueForm = document.getElementById('filter-issue-form');
-// get the details of the issues of the project in json
+// fetching the issue data
 let issuesJson = document.getElementById('issue-data').getAttribute('data');
-// parse the data
+// parsing the data
 let issues = JSON.parse(issuesJson);
 // get element where filtered issues will be shown
 let issueList = document.getElementById('issues-list');
 
 filterIssueForm.addEventListener('submit', function (e) {
   e.preventDefault();
-
-  //create empty array where result will be stored
   let filteredIssues = [];
 
-  //get all the form data
   let labelsList = filterIssueForm.querySelectorAll('input[type=checkbox]');
   let labelsElements = [...labelsList].filter((Element) => Element.checked);
 
